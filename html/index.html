@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfis</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<button class="theme-btn" onclick="toggleTheme()">Modo Escuro</button>
+
+<div class="container">
+  <div class="profiles">
+
+    <!-- CARD -->
+    <div class="card">
+      <img class="avatar" src="../img/perfilDefault.jpg">
+      <h3>Manel Carioca</h3>
+      <p class="role">UX Designer</p>
+
+      <div class="skills">
+        <span>Figma</span>
+        <span>UX</span>
+      </div>
+
+      <p>Seguidores: <span class="followers">180</span></p>
+
+      <div class="buttons">
+        <button class="follow" onclick="toggleFollow(event)">Seguir</button>
+        <button onclick="editProfile(event)">Editar</button>
+      </div>
+
+      <div class="edit-form">
+        <input type="text" class="edit-name" placeholder="Novo nome">
+        <input type="text" class="edit-role" placeholder="Nova profissão">
+        <input type="text" class="edit-skills" placeholder="Skills (vírgula)">
+        <input type="file" class="edit-avatar">
+
+        <p>Cor:</p>
+        <div class="color-options">
+          <span style="background:#ff7675" onclick="selectColor(event)"></span>
+          <span style="background:#74b9ff" onclick="selectColor(event)"></span>
+          <span style="background:#55efc4" onclick="selectColor(event)"></span>
+        </div>
+
+        <button onclick="saveProfile(event)">Salvar</button>
+        <button onclick="closeEdit(event)">Cancelar</button>
+      </div>
+    </div>
+
+  
+    <div class="card">
+      <img class="avatar" src="../img/perfilDefault.jpg">
+      <h3>Carlos Lima</h3>
+      <p class="role">Back-end</p>
+
+      <div class="skills">
+        <span>Node</span>
+        <span>API</span>
+      </div>
+
+      <p>Seguidores: <span class="followers">320</span></p>
+
+      <div class="buttons">
+        <button class="follow" onclick="toggleFollow(event)">Seguir</button>
+        <button onclick="editProfile(event)">Editar</button>
+      </div>
+
+      <div class="edit-form">
+        <input type="text" class="edit-name">
+        <input type="text" class="edit-role">
+        <input type="text" class="edit-skills">
+        <input type="file" class="edit-avatar">
+
+        <p>Cor:</p>
+        <div class="color-options">
+          <span style="background:#ff7675" onclick="selectColor(event)"></span>
+          <span style="background:#74b9ff" onclick="selectColor(event)"></span>
+          <span style="background:#55efc4" onclick="selectColor(event)"></span>
+        </div>
+
+        <button onclick="saveProfile(event)">Salvar</button>
+        <button onclick="closeEdit(event)">Cancelar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="avatar" src="../img/perfilDefault.jpg">
+      <h3>Zeca</h3>
+      <p class="role">Front-end</p>
+
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+      </div>
+
+      <p>Seguidores: <span class="followers">210</span></p>
+
+      <div class="buttons">
+        <button class="follow" onclick="toggleFollow(event)">Seguir</button>
+        <button onclick="editProfile(event)">Editar</button>
+      </div>
+
+      <div class="edit-form">
+        <input type="text" class="edit-name">
+        <input type="text" class="edit-role">
+        <input type="text" class="edit-skills">
+        <input type="file" class="edit-avatar">
+
+        <p>Cor:</p>
+        <div class="color-options">
+          <span style="background:#ff7675" onclick="selectColor(event)"></span>
+          <span style="background:#74b9ff" onclick="selectColor(event)"></span>
+          <span style="background:#55efc4" onclick="selectColor(event)"></span>
+        </div>
+
+        <button onclick="saveProfile(event)">Salvar</button>
+        <button onclick="closeEdit(event)">Cancelar</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
